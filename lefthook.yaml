@@ -1,0 +1,23 @@
+commit-msg:
+  commands:
+    commitlint:
+      run: bun commitlint --edit .git/COMMIT_EDITMSG
+
+pre-commit:
+  parallel: true
+  commands:
+    biome:
+      glob: "*.{ts,tsx,js,jsx,mjs,cjs,json}"
+      run: bun run biome check --write {staged_files}
+      stage_fixed: true
+    prettier:
+      glob: "*.{md,yml,yaml}"
+      run: bun run prettier --write {staged_files}
+      stage_fixed: true
+
+pre-push:
+  # Run a full project verification before allowing a push. This will fail the
+  # push if any step exits non-zero.
+  commands:
+    total-check:
+      run: bun run ci:local
