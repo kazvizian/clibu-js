@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "description": "Declarative CLI engine core for KazVizian Clibu. Provides a compact, type-aware schema for defining commands and options, a deterministic two-phase parser, and validation/runtime primitives.",
-  "homepage": "https://github.com/kazvizian/clibu",
+  "homepage": "https://github.com/kazvizian/clibu-js",
   "author": {
     "name": "KazViz",
     "email": "kaz@kazviz.com",
@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kazvizian/clibu.git",
+    "url": "git+https://github.com/kazvizian/clibu-js.git",
     "directory": "packages/core"
   },
   "bugs": {
-    "url": "https://github.com/kazvizian/clibu/issues"
+    "url": "https://github.com/kazvizian/clibu-js/issues"
   },
   "scripts": {
     "build": "packlet build --sourcemap none",
