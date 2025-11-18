@@ -1,0 +1,9 @@
+riglet v0.0.1
+
+USAGE:
+  riglet <command> [options]
+
+COMMANDS:
+  build  Build project
+
+(Use <command> --help for option details)

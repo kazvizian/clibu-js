@@ -1,0 +1,13 @@
+riglet v0.0.1
+
+COMMAND:
+  build  Build project
+
+USAGE:
+  riglet build [options]
+
+OPTIONS:
+  --threads       Thread count [required]
+  --verbose (-v)  Output verbose [default: false]
+  --mode          Build mode [required, choices: dev|prod]
+  --profile       Lowercase profile
