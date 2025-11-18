@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test"
-import { renderCommandHelp, renderHelp } from "../../help/src/index"
+import { renderCommandHelp, renderHelp } from "../src/help"
 import { createCLI, enumOption, flag, number, string } from "../src/index"
 import { matchSnapshot } from "./snapshot.util"
 

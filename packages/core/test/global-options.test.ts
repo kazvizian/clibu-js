@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test"
-import { renderCommandHelp, renderHelp } from "../../help/src/index"
 import { OptionConflictError } from "../src/errors"
+import { renderCommandHelp, renderHelp } from "../src/help"
 import { buildContext, createCLI, enumOption, flag, number } from "../src/index"
 
 test("root help lists GLOBAL OPTIONS section", () => {
