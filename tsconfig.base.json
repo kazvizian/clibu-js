@@ -16,7 +16,8 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@clibu/core": ["packages/core/src"]
+      "@clibu/core": ["packages/core/src"],
+      "@clibu/help": ["packages/help/src"]
     }
   }
 }
