@@ -67,7 +67,7 @@ jobs:
               fi
 
               # Prepare the .gpr staged package; CLI exits non-zero on fatal errors
-              node packages/cli/dist/index.mjs gpr --root "$pkg"
+              bun x packlet gpr --root "$pkg"
 
               # Only publish if the .gpr directory was created successfully
               if [ -d "$pkg/.gpr" ]; then
