@@ -1,0 +1,56 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`@clibu/help renderHelp renders top-level help (snapshot) 1`] = `
+"mycli v1.2.3
+
+USAGE:
+  mycli <command> [options]
+
+COMMANDS:
+  hello      Greet
+  sub        Parent
+  noinherit  No inherit
+  override   Override global option
+
+GLOBAL OPTIONS:
+  --verbose (-v)  Verbose output
+  --mode          Mode [choices: a|b|c, default: b]
+
+(Use <command> --help for option details)"
+`;
+
+exports[`@clibu/help renderCommandHelp renders command help with options (snapshot) 1`] = `
+"mycli v1.2.3
+
+COMMAND:
+  hello  Greet
+
+USAGE:
+  mycli hello [options]
+
+GLOBAL OPTIONS:
+  --verbose (-v)  Verbose output
+  --mode          Mode [choices: a|b|c, default: b]
+
+OPTIONS:
+  --name  Name"
+`;
+
+exports[`@clibu/help renderCommandHelp renders subcommands list (snapshot) 1`] = `
+"mycli v1.2.3
+
+COMMAND:
+  sub  Parent
+
+USAGE:
+  mycli sub [options]
+
+SUBCOMMANDS:
+  child  Child cmd
+
+GLOBAL OPTIONS:
+  --verbose (-v)  Verbose output
+  --mode          Mode [choices: a|b|c, default: b]
+
+(No options)"
+`;
