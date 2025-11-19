@@ -1,6 +1,6 @@
 {
   "name": "@clibu/core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "Declarative CLI engine core for KazVizian Clibu. Provides a compact, type-aware schema for defining commands and options, a deterministic two-phase parser, and validation/runtime primitives.",
   "homepage": "https://github.com/kazvizian/clibu-js",
