@@ -1,4 +1,5 @@
 import type {
+  CLIConfig,
   EnumOptionSchema,
   FlagOptionSchema,
   NumberOptionSchema,
@@ -78,4 +79,45 @@ export function normalizeOptionRecord(rec: OptionRecord): OptionRecord {
     }
   }
   return out
+}
+
+/**
+ * Define a `CLIConfig` with full type-safety in authoring time.
+ *
+ * Wrap your exported configuration with this helper to get rich IntelliSense
+ * and immediate type errors in your editor:
+ *
+ * ```ts
+ * import { defineConfig } from "clibu"
+ * export default defineConfig({
+ *   name: "mycli",
+ *   commands: {}
+ * })
+ * ```
+ *
+ * Notes:
+ * - This
+function is
+a
+no - op
+at
+runtime
+it
+returns
+the
+object
+unchanged.
+ * - Alternatively, on
+TS
+4.9 + you
+can
+use
+the`satisfies`
+operator:
+*   `
+export default { ... } satisfies CLIConfig
+`
+ */
+export function defineConfig<T extends CLIConfig>(cfg: T): T {
+  return cfg
 }
