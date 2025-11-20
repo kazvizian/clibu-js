@@ -6,11 +6,32 @@
   "bin": {
     "clibu": "./dist/index.mjs"
   },
+  "homepage": "https://github.com/kazvizian/clibu-js",
+  "author": {
+    "name": "KazViz",
+    "email": "kaz@kazviz.com",
+    "url": "https://kazviz.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazvizian/clibu-js.git",
+    "directory": "packages/clibu"
+  },
+  "bugs": {
+    "url": "https://github.com/kazvizian/clibu-js/issues"
+  },
   "scripts": {
     "build": "packlet-build --external-auto --exec-js",
     "clean": "rm -rf dist .tsbuildinfo",
     "test": "bun test"
   },
+  "keywords": [
+    "kazviz",
+    "kazvizian",
+    "clibu",
+    "cli",
+    "builder"
+  ],
   "dependencies": {
     "@clibu/core": "^0.1.1",
     "@clibu/help": "^0.1.0",
@@ -31,10 +52,17 @@
     "dist"
   ],
   "engines": {
+    "bun": ">=1.2.0",
     "node": ">=18"
   },
+  "packageManager": "bun@1.3.1",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "packlet": {
-    "gpr": true
+    "gpr": true,
+    "gprName": "clibu"
   },
   "sideEffects": false
 }
