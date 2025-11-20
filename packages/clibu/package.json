@@ -1,0 +1,40 @@
+{
+  "name": "clibu",
+  "version": "0.1.0",
+  "description": "Clibu is a KazVizian lightweight framework for building command-line interfaces.",
+  "license": "MIT",
+  "bin": {
+    "clibu": "./dist/index.mjs"
+  },
+  "scripts": {
+    "build": "packlet-build --external-auto --exec-js",
+    "clean": "rm -rf dist .tsbuildinfo",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@clibu/core": "^0.1.0",
+    "@clibu/help": "workspace:*",
+    "@clibu/loader": "workspace:*"
+  },
+  "devDependencies": {},
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "packlet": {
+    "gpr": true
+  },
+  "sideEffects": false
+}
