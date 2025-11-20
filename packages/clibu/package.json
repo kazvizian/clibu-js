@@ -12,9 +12,9 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@clibu/core": "^0.1.0",
-    "@clibu/help": "workspace:*",
-    "@clibu/loader": "workspace:*"
+    "@clibu/core": "^0.1.1",
+    "@clibu/help": "^0.1.0",
+    "@clibu/loader": "^0.1.0"
   },
   "devDependencies": {},
   "main": "./dist/index.mjs",
